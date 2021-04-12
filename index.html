@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/icons/favicon.png">
+        <title>UP-Dev | Portfolio</title>
+        <link rel="stylesheet" href="css/main-style.css">
+        <script src="js/pt.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="pt" class="canvas"></div>
+
+        <nav id="nav-section">
+            <a id="logo-link">
+                <img id="logo-img" width="30" height="33" src="img/logo/logo.png" alt="Logo">
+            </a>
+
+            <div class="nav-link-section" id="nav-link-section">
+                <div class="dropdown">
+                    <span class="nav-link">work</span>
+                    <div class="dropdown-content">
+                        <a href="#">Scheduler PWA (Ger)</a>
+                        <a href="https://uliprantz.github.io/">Cross Platfrom App</a>
+                    </div>
+                </div>
+                <a class="nav-link nav-link-border" href="https://github.com/UliPrantz">github</a>
+                <a class="nav-link" href="contact.html">contact</a>
+            </div>
+
+            <img class="menu-icon" id="menu-icon" onclick="toggleDropdownMenu()" width="30px" height="30px"  src="img/icons/menu-bar-white.png" alt="Menu icon">
+            <script type="text/javascript">
+                function toggleDropdownMenu() {
+                    var navSection = document.getElementById("nav-section");
+                    var logoImg = document.getElementById("logo-img");
+                    var navLinkSection = document.getElementById("nav-link-section");
+                    var menuIcon = document.getElementById("menu-icon");
+                    if (navLinkSection.className === "nav-link-section") {
+                        navSection.className = "nav-responsive";
+                        logoImg.className = "logo-img-responsive";
+                        navLinkSection.className += " responsive";
+                        menuIcon.className += " responsive";
+                    } else {
+                        navSection.className = "";
+                        logoImg.className = "";
+                        navLinkSection.className = "nav-link-section";
+                        menuIcon.className = "menu-icon";
+                    }
+                }
+            </script>
+            <script>
+                document.getElementById("logo-link").href = window.location.href;
+            </script>
+        </nav>
+
+        <section class="main-text">
+            <div>
+                <h1>
+                    <span class="title-character">Hi, I’m&nbsp;</span>
+                    <div class="main-text-div">
+                        <img class="main-img" width="132" height="153" src="img/logo/logo.png" alt="Logo">
+                        <span class="title-character">li.</span>
+                    </div>
+                </h1>
+                <br>
+                <h2 class=subline>
+                    Full-Stack Developer
+                </h2>
+            </div>
+        </section>
+        <script src="js/space.js"></script>
+    </body>
+</html>

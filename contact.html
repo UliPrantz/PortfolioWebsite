@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/icons/favicon.png">
+        <title>UP-Dev | Portfolio</title>
+        <link rel="stylesheet" href="css/contact-style.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    </head>
+    <body>
+        <nav id="nav-section">
+            <a id="logo-link">
+                <img id="logo-img" width="30" height="33" src="img/logo/logo.png" alt="Logo">
+            </a>
+        </nav>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <a class="contact-cell" href="https://t.me/uprtz">
+                    <i class="icon fab fa-telegram"></i>
+                    <div class="contact-description">
+                        <h2>Telegram</h2>
+                        <h3>@uprtz</h3>
+                    </div>
+                </a>
+
+                <a class="contact-cell" href="mailto:up.devmail@gmail.com">
+                    <i class="icon fas fa-envelope"></i>
+                    <div class="contact-description">
+                        <h2>Mail</h2>
+                        <h3>up.devmail@gmail.com</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <script>
+            var myLocation = window.location;
+            document.getElementById("logo-link").href = myLocation.protocol + "//" + myLocation.host + "/index.html";
+        </script>
+    </body>
+</html>

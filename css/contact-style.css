@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+:root {
+    --bg-primary: #252934;
+    --bg-secondary: black;
+    --icon-blue: #00BBE8;
+    --icon-red: #ED145A;
+    --border-color: #7D8689;
+    --fc-primary: white;
+    --ff-primary: 'Exo 2', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--bg-primary);
+}
+
+body {
+    height: 100%;
+
+    color: var(--fc-primary);
+}
+
+nav {
+    padding: 16px 0px 16px 0px;
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    padding-left: 16px;
+}
+
+h2 {
+    font-family: var(--ff-primary);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: var(--ff-primary);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.contact-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    border: 1px solid var(--border-color);
+}
+
+.contact-cell {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+a.contact-cell:hover {
+    background-color: var(--border-color);
+}
+
+.contact-cell:not(:first-child) {
+    border-top: 1px solid var(--border-color);
+}
+
+
+
+.contact-description {
+    display: block;
+    padding: 15px;
+}
+
+.contact-description h2 {
+    padding-bottom: 6px;
+}
+
+.icon {
+    color: var(--icon-blue);
+    padding: 18px;
+    font-size: 2.5rem;
+}
